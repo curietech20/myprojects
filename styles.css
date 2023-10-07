@@ -118,7 +118,7 @@ nav {
   height: 80px;
   border-radius: 20%;
   overflow: hidden;
-}
+} 
 
 .nav__link--list {
   display: flex;
@@ -245,7 +245,7 @@ nav {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .about-me__img {
@@ -423,7 +423,7 @@ nav {
 /* Footer */
 
 footer {
-  background-color: #242424;
+  background-color: #000000;
 }
 
 .footer__social--list {
@@ -445,8 +445,8 @@ footer {
 }
 
 .footer__logo--img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 
 .footer__social--link,
