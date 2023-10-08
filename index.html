@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +16,7 @@
     <section id="about-me">
       <nav>
         <img src="./assets/ctwhite.png" class="nav__logo--img" alt="" />
-     
+
         <!-- ul.nav__link--list enter: -->
         <ul class="nav__link--list">
           <!-- shift + alt + fel/le és kimásolja a kijelölt szövegrészt -->
@@ -36,10 +35,15 @@
             >
           </li>
           <li>
-            <a href="mailto:curietech20@proton.me" target="_blank" class="nav__link--anchor nav__link--anchor-primary"
+            <a
+              href="mailto:curietech20@proton.me"
+              target="_blank"
+              class="nav__link--anchor nav__link--anchor-primary"
               >Contact</a
             >
           </li>
+          <!-- dark mode próba 
+          <li><img src="./assets/moon.png" id="icon" /></li>-->
         </ul>
       </nav>
 
@@ -56,10 +60,15 @@
               />
             </figure>
             <h1 class="about-me__info--title">
-                <!-- &nbsp; space ebben az esetben! -->
-              Hey! I'm <span class="text--purple">Curie Tech 2.0</span>&nbsp;<span class="wave"> 👋</span>
+              <!-- &nbsp; space ebben az esetben! -->
+              Hey! I'm
+              <span class="text--purple">Curie Tech 2.0</span>&nbsp;<span
+                class="wave"
+              >
+                👋</span
+              >
             </h1>
-            
+
             <p class="about-me__info--para">
               I'm
               <strong class="text--purple"
@@ -69,20 +78,36 @@
               now and positively impact the world.
             </p>
             <div class="about-me__links">
-              <a href="https://github.com/curietech20" target="_blank" class="about-me__link">
+              <a
+                href="https://github.com/curietech20"
+                target="_blank"
+                class="about-me__link"
+              >
                 <i class="fa-brands fa-github"></i>
               </a>
-              <a href="https://www.tiktok.com/@curietech20" target="_blank" class="about-me__link">
+              <a
+                href="https://www.tiktok.com/@curietech20"
+                target="_blank"
+                class="about-me__link"
+              >
                 <i class="fa-brands fa-tiktok"></i>
               </a>
               <a href="" target="_blank" class="about-me__link">
                 <i class="fa-brands fa-twitch"></i>
               </a>
-              <a href="mailto:curietech20@proton.me" target="_blank" class="about-me__link">
+              <a
+                href="mailto:curietech20@proton.me"
+                target="_blank"
+                class="about-me__link"
+              >
                 <i class="fa-solid fa-envelope"></i>
               </a>
               <!-- download a target helyett és rögtön letölti! -->
-              <a href="./assets/Example Resume.pdf" target="_blank" class="about-me__link">
+              <a
+                href="./assets/Example Resume.pdf"
+                target="_blank"
+                class="about-me__link"
+              >
                 <i class="fa-solid fa-file-pdf"></i>
               </a>
             </div>
@@ -337,38 +362,54 @@
             class="footer__social--link link__hover-effect link__hover-effect--white"
             target="_blank"
             ><i class="fa-brands fa-github"></i>
-            </a>
+          </a>
           <a
             href="https://www.tiktok.com/@curietech20"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             target="_blank"
-            ><i class="fa-brands fa-tiktok"></i></a
-          >
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
 
           <a
             href="./assets/Example Resume.pdf"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             target="_blank"
-            ><i class="fa-brands fa-twitch"></i></a
-          >
+            ><i class="fa-brands fa-twitch"></i
+          ></a>
 
           <!-- mailto:emailcím és rögtön tudnak neked emailt küldeni -->
           <a
             href="mailto:curietech20@proton.me"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             target="_blank"
-            ><i class="fa-solid fa-envelope"></i></a
-          >
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
           <a
             href="./assets/Example Resume.pdf"
             class="footer__social--link link__hover-effect link__hover-effect--white"
             target="_blank"
-            ><i class="fa-solid fa-file-pdf"></i></a
-          >
+            ><i class="fa-solid fa-file-pdf"></i
+          ></a>
           <!-- download: lásd fent! ha azt akarod h le is töltődjön automatikusan -->
         </div>
         <div class="footer__copyright">Copyright © 2023 Curie Tech 2.0</div>
       </div>
     </footer>
+<!--  
+    <script>
+
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+          icon.src = "./assets/sun.png";
+        } else {
+          icon.src ="./assets/moon.png";
+        }
+      }
+
+    </script>-->
+
   </body>
 </html>
