@@ -10,16 +10,16 @@
   box-sizing: border-box;
 }
 
-/* dark mode tryin
+/* dark mode tryin */
 
 :root {
-  --primary-color: #edf2f2;
-  --secondary-color: #212121;
+  --primary-color: #212121;
+  --secondary-color: #edf2f2;
 }
 .dark-theme {
-  --primary-color: #000106;
-  --secondary-color: #fff;
-}*/
+  --primary-color: #fff;
+  --secondary-color: #000106;
+}
 
 html {
   scroll-behavior: smooth;
@@ -67,11 +67,11 @@ i:hover {
 }
 
 .link__hover-effect--white:after {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .link__hover-effect--black:after {
-  background-color:  var(--secondary-color);
+  background-color:  var(--primary-color);
 }
 
 .link__hover-effect:hover:after {
@@ -126,6 +126,12 @@ nav {
   align-items: center;
   padding: 0 12px;
 }
+
+.nav__info--title {
+  color: #008cff;
+  font-size: 16px;
+  margin-top: -10px; 
+}
   
 .nav__logo--img {
   width: 80px;
@@ -161,6 +167,7 @@ nav {
 #icon {
   width: 30px;
   cursor: pointer;
+  margin-top: -5px; 
 }
 /* 
 nav ul {
@@ -278,11 +285,15 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;  
+  margin-top: 30px;
+
 }
 
 .about-me__img {
   width: 100%;
   animation: fade-in 1200ms 800ms backwards;
+  border-radius: 50px; /* Lekerekítés mértéke */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Árnyék */
 }
 
 @keyframes fade-in {
@@ -364,6 +375,10 @@ nav ul {
 
 /* Projects */
 
+#projects {
+  background-color: var(--primary-color);
+}
+
 .project {
   margin-bottom: 135px;
   
@@ -393,7 +408,7 @@ nav ul {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   opacity: 0;
   transition: opacity 450ms ease;
   z-index: 2;
@@ -451,13 +466,13 @@ nav ul {
 .project__description--para,
 .project__description--link {
   text-align: left;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* Footer */
 
 footer {
-  background-color: #000;
+  background-color: var(--primary-color);
 }
 
 .footer__social--list {
@@ -486,22 +501,28 @@ footer {
 .footer__social--link,
 .footer__copyright,
 .footer__logo--popper {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .footer__logo--popper {
   position: absolute;
   right: 0;
-  top: 30px;
+  top: 0px;
   font-weight: 700;
   opacity: 0;
   /* ease: Ezáltal az animációk természetesebben és simábban néznek ki. */
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 
 .footer__anchor {
   position: relative;
   margin-bottom: 20px;
+}
+
+.footer__info--title {
+  color: #008cff;
+  font-size: 16px;
+  height: 25px;
 }
 
 .footer__anchor:hover .footer__logo--popper {

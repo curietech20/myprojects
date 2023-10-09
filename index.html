@@ -15,8 +15,10 @@
     <!-- section#aboutme enter: -->
     <section id="about-me">
       <nav>
+        <h1 class="nav__info--title">Curie Tech 2.0</h1>
+        <!-- 
         <img src="./assets/ctwhite.png" class="nav__logo--img" alt="" />
-
+ -->
         <!-- ul.nav__link--list enter: -->
         <ul class="nav__link--list">
           <!-- shift + alt + fel/le és kimásolja a kijelölt szövegrészt -->
@@ -42,8 +44,8 @@
               >Contact</a
             >
           </li>
-          <!-- dark mode próba 
-          <li><img src="./assets/moon.png" id="icon" /></li>-->
+          <!-- dark mode próba -->
+          <li><img src="./assets/sun.png" id="icon" /></li>
         </ul>
       </nav>
 
@@ -113,11 +115,7 @@
             </div>
           </div>
           <figure class="about-me__img--container">
-            <img
-              src="./assets/undraw_Web_development_0l6v.png"
-              class="about-me__img"
-              alt=""
-            />
+            <img src="./assets/15080647_tp201-sasi-09.jpg" class="about-me__img" alt="" />
           </figure>
         </div>
       </div>
@@ -216,6 +214,7 @@
         </div>
       </div>
     </section>
+
     <section id="projects">
       <div class="container">
         <div class="row">
@@ -227,7 +226,7 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/undraw_Shopping_re_hdd9.png"
+                  src="./assets/bbbbbbb.jpg"
                   class="project__img"
                   alt="car subscription project"
                 />
@@ -266,7 +265,7 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/undraw_Shopping_re_hdd9.png"
+                  src="./assets/ssssssssss.jpg"
                   class="project__img"
                   alt="car subscription project"
                 />
@@ -305,7 +304,7 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/undraw_Shopping_re_hdd9.png"
+                  src="./assets/5891176_3054974aa.jpg"
                   class="project__img"
                   alt="car subscription project"
                 />
@@ -349,7 +348,7 @@
         <!-- # go back top of the page -->
         <a href="#" class="footer__anchor">
           <figure class="footer__logo">
-            <img src="./assets/ctblack.png" class="footer__logo--img" alt="" />
+            <h1 class="footer__info--title">Curie Tech 2.0</h1>
           </figure>
           <span class="footer__logo--popper">
             Top
@@ -395,21 +394,18 @@
         <div class="footer__copyright">Copyright © 2023 Curie Tech 2.0</div>
       </div>
     </footer>
-<!--  
-    <script>
 
+    <script>
       var icon = document.getElementById("icon");
 
-      icon.onclick = function(){
+      icon.onclick = function () {
         document.body.classList.toggle("dark-theme");
-        if(document.body.classList.contains("dark-theme")){
-          icon.src = "./assets/sun.png";
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "./assets/moon.png";
         } else {
-          icon.src ="./assets/moon.png";
+          icon.src = "./assets/sun.png";
         }
-      }
-
-    </script>-->
-
+      };
+    </script>
   </body>
 </html>
